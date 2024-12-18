@@ -7,6 +7,12 @@
 # 프로젝트 개발 도구
 `next.js` `typescript` `tailwindcss` `@tanstack/react-query` 
 
+# 폴더 소개
+1. Champions: ISR 렌더링 방식, 챔피언 리스트를 소개하는 페이지
+2. Champions[id]: 동적 라우팅 방식, 챔피언 리스트에서 챔피언 카드를 눌렀을때 이동하는 페이지
+3. Item: SSG 렌더링 방식, 아이템 목록을 소개하는 페이지
+4. Rotation: CSR 렌더링 방식, 챔피언 로테이션을 소개하는 페이지
+
 # 시연 스크린샷
 
 1. 메인 페이지
