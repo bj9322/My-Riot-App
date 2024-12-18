@@ -25,7 +25,7 @@
 ![스크린샷 2024-12-18 200627](https://github.com/user-attachments/assets/182818e1-cce4-4f01-9a2c-c01a9a638fde)
 
 # 폴더 구조
-📦src
+`📦src
  ┣ 📂app
  ┃ ┣ 📂champions
  ┃ ┃ ┣ 📂[id]
@@ -49,4 +49,4 @@
  ┃ ┗ 📜Item.ts
  ┗ 📂utils
  ┃ ┣ 📜riotApi.ts
- ┃ ┗ 📜serverApi.ts
+ ┃ ┗ 📜serverApi.ts`
