@@ -5,5 +5,9 @@
 2024.12.11 ~ 2024.12.18
 
 ## 프로젝트 개발 도구
-`next` `typescript` `tailwindcss` `@tanstack/react-query` 
+`next.js` `typescript` `tailwindcss` `@tanstack/react-query` 
 
+## 시연 스크린샷
+
+# 메인 페이지
+![스크린샷 2024-12-18 200547](https://github.com/user-attachments/assets/21fef2bd-9b09-405f-ab10-b2633efbc3e9)
