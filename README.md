@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 프로젝트 소개
+나만의 Riot App Page 입니다. 챔피언 소개 및 아이템을 확인할 수 있고 금주 로테이션 챔피언도 확인할 수 있습니다.
 
-## Getting Started
+# 프로젝트 개발기간
+2024.12.11 ~ 2024.12.18
 
-First, run the development server:
+# 프로젝트 개발 도구
+`next.js` `typescript` `tailwindcss` `@tanstack/react-query` 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+# 폴더 소개
+1. Champions: ISR 렌더링 방식, 챔피언 리스트를 소개하는 페이지
+2. Champions[id]: 동적 라우팅 방식, 챔피언 리스트에서 챔피언 카드를 눌렀을때 이동하는 페이지
+3. Item: SSG 렌더링 방식, 아이템 목록을 소개하는 페이지
+4. Rotation: CSR 렌더링 방식, 챔피언 로테이션을 소개하는 페이지
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# 시연 스크린샷
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. 메인 페이지
+![스크린샷 2024-12-18 200547](https://github.com/user-attachments/assets/21fef2bd-9b09-405f-ab10-b2633efbc3e9)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+2. 챔피언 리스트 페이지
+![스크린샷 2024-12-18 200558](https://github.com/user-attachments/assets/ba7cc852-eccd-4946-9a52-6ea734d5b3e1)
 
-## Learn More
+3. 챔피언 디테일 페이지
+![스크린샷 2024-12-18 200609](https://github.com/user-attachments/assets/f07214ae-cd08-4a68-8c02-3e3e60cdfae5)
 
-To learn more about Next.js, take a look at the following resources:
+4. 아이템 리스트 페이지
+![스크린샷 2024-12-18 200618](https://github.com/user-attachments/assets/40245fd2-8646-4844-a896-9bb838781a64)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+5. 챔피언 로테이션 페이지
+![스크린샷 2024-12-18 200627](https://github.com/user-attachments/assets/182818e1-cce4-4f01-9a2c-c01a9a638fde)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# 폴더 구조
+``` bash
+📦src
+ ┣ 📂app
+ ┃ ┣ 📂champions
+ ┃ ┃ ┣ 📂[id]
+ ┃ ┃ ┃ ┗ 📜page.tsx
+ ┃ ┃ ┗ 📜page.tsx
+ ┃ ┣ 📂items
+ ┃ ┃ ┗ 📜page.tsx
+ ┃ ┣ 📂rotation
+ ┃ ┃ ┗ 📜page.tsx
+ ┃ ┣ 📜favicon.ico
+ ┃ ┣ 📜globals.css
+ ┃ ┣ 📜layout.tsx
+ ┃ ┗ 📜page.tsx
+ ┣ 📂components
+ ┃ ┗ 📜QueryProvider.tsx
+ ┣ 📂pages
+ ┃ ┗ 📂api
+ ┃ ┃ ┗ 📜rotation.ts
+ ┣ 📂types
+ ┃ ┣ 📜Champion.ts
+ ┃ ┗ 📜Item.ts
+ ┗ 📂utils
+ ┃ ┣ 📜riotApi.ts
+ ┃ ┗ 📜serverApi.ts
